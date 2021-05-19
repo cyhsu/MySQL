@@ -49,7 +49,7 @@ VALUES
 SELECT * 
 FROM Course
 ```
-![Q2_Table](MySQL_AMZN_Q2_Orig.png)
+![Q2_Table](MySQL_AMZN_Q2_Return.png)
 
 ```sql
 WITH cte AS (SELECT 
@@ -68,4 +68,4 @@ WHERE R>0) c2
 ON c1.Student = c2.Student and c1.R = c2.R
 ;
 ```
-![Q2_Return](MySQL_AMZN_Q2_Return.png)
+![Q2_Return](MySQL_AMZN_Q2_Orig.png)
