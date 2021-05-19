@@ -46,7 +46,12 @@ VALUES
   ('Sam', '2020-06-01'), 
   ('Sam', '2020-03-01')
 ;
+SELECT * 
+FROM Course
+```
+![Q2_Table](MySQL_AMZN_Q2_Orig.png)
 
+```sql
 WITH cte AS (SELECT 
   Student, Start_Date,  
   ROW_NUMBER () OVER (PARTITION BY Student ORDER BY Start_Date) AS R 
@@ -63,3 +68,4 @@ WHERE R>0) c2
 ON c1.Student = c2.Student and c1.R = c2.R
 ;
 ```
+![Q2_Return](MySQL_AMZN_Q2_Return.png)
