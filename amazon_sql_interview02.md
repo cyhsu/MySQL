@@ -85,3 +85,4 @@ SELECT
 FROM Course
 ;
 ```
+![Q2_TableSol02](MySQL_AMZN_Q2_Return2.png)
