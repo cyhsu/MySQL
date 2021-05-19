@@ -73,6 +73,7 @@ ON c1.Student = c2.Student and c1.R = c2.R
 ![Q2_Return](MySQL_AMZN_Q2_Orig.png)
 
 <br/>  
+
 ```sql
 -- Solution 2: LEAD
 SELECT 
