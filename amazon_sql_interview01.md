@@ -13,6 +13,10 @@ WHERE c.customer_id NOT IN (
   FROM trans
 )
 ;
+```
+
+<br/>       
+
 ```sql
 -- solution 02
 SELECT 
