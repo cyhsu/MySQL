@@ -1,5 +1,5 @@
 #### Questions: 
-In this question, I would like to have customer id where
+In this question, I would like to have customer_id where
 > within table **customer**    
 > but not in table **trans**.
 
