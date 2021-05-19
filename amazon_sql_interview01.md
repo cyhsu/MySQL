@@ -1,5 +1,6 @@
 #### Questions: 
-In this question, I would like to have customer id within table **customer** but not in table **trans**.
+In this question, I would like to have customer id within table **customer**    
+                                                   but not in table **trans**.
 
 ```sql
 -- solution 01
