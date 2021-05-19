@@ -30,6 +30,8 @@ Return...
 
 
 ```sql
+-- Solution 01
+
 CREATE TABLE Course (
     Student VARCHAR(20), 
     Start_date Date
@@ -69,3 +71,16 @@ ON c1.Student = c2.Student and c1.R = c2.R
 ;
 ```
 ![Q2_Return](MySQL_AMZN_Q2_Orig.png)
+
+<br/>  
+```sql
+-- Solution 2: LEAD
+SELECT 
+    Student,
+    Start_date,
+    LEAD(Start_date,1) OVER (
+        PARTITION BY Student
+        ORDER BY Start_date ) AS End_Date
+FROM Course
+;
+```
